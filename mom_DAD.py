@@ -7,4 +7,4 @@ sum2 = 'my ' + my_string1 + ' and my ' + mystring2
 print(sum2)
 
 print(sum2[3:6])
-print(sum2[-4:-1])
+print(sum2[-3:])
