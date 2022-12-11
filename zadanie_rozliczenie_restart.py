@@ -14,8 +14,15 @@ for i in range (len(content)):
 total = 0
 for i in range(1, len(content)):
     total = total + int(content[i][1])
-print(total)
+#print(total)
 average = total / (len(content)-1)
-print(round(average,2))
+#print(round(average,2))
 
 #3. Obliczanie liczby kobiet na macierzynskim
+total = 0
+for i in range(1, len(content)):
+    #print(content[i][4])
+    content[i][4] = content[i][4].replace('\n', '')
+    if content[i][4] == 't' and content[i][3] == 'k':
+        total += 1
+print(total)
